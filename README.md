@@ -1,19 +1,24 @@
-# Logic-Based Mystery Solver
+# AI Knowledge & Reasoning Lab
 
-A Python implementation of propositional logic and model checking for solving murder mystery puzzles.
+A simple murder mystery solver demonstrating AI knowledge representation and logical reasoning.
 
-## Overview
+## What it does
 
-This project demonstrates AI logical reasoning by solving a murder mystery with 3 suspects, 3 weapons, and 3 rooms using propositional logic and model checking algorithms.
+Uses propositional logic to solve: Who killed whom, with what weapon, and where?
 
-## Key Features
+- 3 suspects: Lord Alaric, Lady Morgana, Butler Edwin
+- 3 weapons: Silver Dagger, Wine Bottle, Piano Wire
+- 3 rooms: Library, Dining Hall, Rose Garden
 
-- Propositional logic framework (Symbol, Not, And, Or)
-- Model checking algorithm for logical entailment
-- Interactive shell for adding clues and solving mysteries
-- Exactly-one constraints ensuring unique solutions
+## How it works
 
-### Basic Commands
+1. **Knowledge Base**: Stores facts using propositional logic (AND, OR, NOT)
+2. **Constraints**: Exactly one suspect, weapon, and room must be true
+3. **Reasoning**: When you eliminate options, the system deduces what must be true
+
+## Usage
+
+Run the notebook and use commands:
 
 - `list` - Show suspects, weapons, rooms
 - `status` - Display known facts (YES/MAYBE)
@@ -28,13 +33,9 @@ This project demonstrates AI logical reasoning by solving a murder mystery with 
 - `model_check(KB, query, symbols)` - Checks entailment
 - `exactly_one(symbols)` - Generates mutual exclusivity constraints
 
-## Learning Objectives
+## Learning Goal
 
-- Propositional logic and model checking
-- Knowledge representation in AI
-- Constraint satisfaction problems
-- Logical inference algorithms
+Demonstrates CS50-style AI concepts:
 
-## Requirements
-
-Python 3.7+ (no external dependencies)
+- How to represent knowledge in AI systems
+- How AI makes logical deductions from facts
